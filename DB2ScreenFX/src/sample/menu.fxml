@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.ControllerMenu">
+  <children>
+    <Pane fx:id="panel_menu" layoutX="88.0" layoutY="34.0" prefHeight="311.0" prefWidth="404.0" visible="true">
+      <children>
+        <Button fx:id="bt_gen_form" layoutX="14.0" layoutY="79.0" mnemonicParsing="false" text="Génerer formulaire HTML" />
+        <Text layoutX="193.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Text>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

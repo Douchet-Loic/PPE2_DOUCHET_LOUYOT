@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.ControllerConnexion">
+  <children>
+    <Pane fx:id="panel_connexion" cache="false" layoutX="65.0" layoutY="70.0" prefHeight="260.0" prefWidth="444.0" visible="true">
+      <Text layoutX="134.0" layoutY="31.0" scaleX="1.6253273301247217" scaleY="1.7547447945457895" strokeType="OUTSIDE" strokeWidth="0.0" text="Connexion">
+        <font>
+          <Font size="18.0" />
+        </font>
+      </Text>
+      <PasswordField fx:id="field_password_mdp" layoutX="131.0" layoutY="130.0" prefWidth="127.0" />
+      <TextField fx:id="field_text_id" layoutX="131.0" layoutY="75.0" prefWidth="126.638671875" />
+      <Button fx:id="bt_connecter" layoutX="284.0" layoutY="93.0" mnemonicParsing="false" prefHeight="37.19921875" prefWidth="127.0" text="Connection" />
+      <Button fx:id="bt_quitter" layoutX="304.0" layoutY="190.0" mnemonicParsing="false" prefHeight="30.310546875" prefWidth="87.0" text="Quitter" />
+      <Text fx:id="txt_erreur" fill="#ff3333" layoutX="165.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiant ou mot de passe incorrect !" visible="false" />
+      <Text layoutX="94.0" layoutY="86.0" scaleX="1.3724969361842048" scaleY="1.3265722539346816" strokeType="OUTSIDE" strokeWidth="0.0" text="id :" />
+      <Text layoutX="24.0" layoutY="143.0" scaleX="1.1222395420472742" scaleY="1.3918867202449292" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe :" />
+    </Pane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="639.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.ControllerAffichageColonne">
+  <children>
+    <ComboBox fx:id="cb_colonne" layoutX="14.0" layoutY="88.0" prefHeight="21.0" prefWidth="121.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList" />
+      </items>
+    </ComboBox>
+    <Text layoutX="202.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Colonne à générer">
+      <font>
+        <Font size="24.0" />
+      </font>
+    </Text>
+    <Label layoutX="309.0" layoutY="124.0" text="Type de champ :" />
+    <ComboBox fx:id="cb_type_champ" layoutX="419.0" layoutY="124.0" prefHeight="21.0" prefWidth="167.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Text" />
+          <String fx:value="Password" />
+          <String fx:value="Liste déroulante" />
+          <String fx:value="Bouton radio" />
+          <String fx:value="Case à cocher" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label layoutX="308.0" layoutY="93.0" text="Nom du champ :" />
+    <TextField fx:id="txt_nom_champ" layoutX="419.0" layoutY="90.0" prefWidth="167.0" />
+    <TableView id="" fx:id="liste_enregistrement" editable="false" layoutX="14.0" layoutY="229.0" prefHeight="157.0" prefWidth="438.0" tableMenuButtonVisible="false">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="119.0" text="Nom de la colonne" fx:id="tb_nom_colonne" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="110.0" text="Nom du champ" fx:id="tb_nom_champ" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="133.0" text="Type de champ" fx:id="tb_type_champ" />
+        <TableColumn fx:id="tb_ligne" prefWidth="75.0" text="Ligne" />
+      </columns>
+    </TableView>
+    <Button fx:id="bt_enregistrer" layoutX="503.0" layoutY="169.0" mnemonicParsing="false" text="Enregistrer" />
+    <Label layoutX="14.0" layoutY="200.0" text="Colonnes renseignées :" underline="true" />
+    <Label layoutX="14.0" layoutY="66.0" text="Choix de la colonne :" underline="true" />
+    <Label layoutX="308.0" layoutY="66.0" text="Type de mise en page :" underline="true" />
+    <Button fx:id="bt_creation_form" layoutX="469.0" layoutY="330.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="146.9443359375" text="Création du formulaire" />
+  </children>
+</AnchorPane>

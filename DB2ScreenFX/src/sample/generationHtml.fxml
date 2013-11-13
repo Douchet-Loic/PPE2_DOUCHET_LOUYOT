@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="sample.ControllerGenerationHtml" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <TableView fx:id="liste_base" layoutX="62.0" layoutY="59.0" prefHeight="200.0" prefWidth="200.0">
+      <columns>
+        <TableColumn fx:id="liste_base_col_num" prefWidth="75.0" text="Numéro" />
+        <TableColumn fx:id="liste_base_col_nom" prefWidth="75.0" text="Nom" />
+      </columns>
+    </TableView>
+    <TableView fx:id="liste_table" layoutX="342.0" layoutY="59.0" prefHeight="200.0" prefWidth="200.0">
+      <columns>
+        <TableColumn fx:id="liste_table_col_num" prefWidth="75.0" text="Numéro" />
+        <TableColumn fx:id="liste_table_col_nom" prefWidth="75.0" text="Nom" />
+      </columns>
+    </TableView>
+    <Button fx:id="bt_generer" layoutX="401.0" layoutY="305.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="82.0" text="Générer" />
+    <Text layoutX="62.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des bases :">
+      <font>
+        <Font size="18.0" fx:id="x1" />
+      </font>
+    </Text>
+    <Text font="$x1" layoutX="342.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des tables :" />
+  </children>
+</AnchorPane>
